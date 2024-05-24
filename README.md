@@ -1,0 +1,9 @@
+# cache-memory-model
+Write a program simulating the process of memory management (allocation of memory for processes, memory search by process requests, memory release) with a given option.
+Input data - the size of the memory to be allocated, the size of the memory required by the processes, etc. are set independently and in accordance with the task. Demonstrate the operation of the model with the execution of basic operations with memory: providing memory of the required size at the request of a process, performing a write or read, freeing memory when the process ends. 
+Tasks of operations can be implemented using the menu.
+Output data - visual information about the current memory allocation (memory map), containing the addresses of memory areas, the state (free or occupied and by whom) after each memory operation. 
+When modeling memory cache algorithms, the address space of memory cache and main memory can be set arbitrarily with a ratio of their volumes of at least 1:10. Searching, writing and replacing information in the memory cache should be performed by assigning the addresses of the main memory.
+
+Cache memory. Develop a model that implements a search algorithm and 
+replacing data in the cache memory for deterministic mapping of data to the cache (In the deterministic mapping method, any element of the main memory is mapped to the same location of the cache memory. In this case, the cache memory is divided into rows, each of which is designed to store one record of one data element and has its own number). Reconciliation of main and cache memory data should be performed according to the write-back principle (when writing back, the cache is checked and, if there is no data there, the record is made to the main memory. Otherwise, the record is made only to the cache. At the same time, a modification indicator is set .When pushing out data from the cache, this data will be overwritten in the main memory).
